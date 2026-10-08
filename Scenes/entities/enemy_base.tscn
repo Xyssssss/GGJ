@@ -1,0 +1,55 @@
+[gd_scene load_steps=12 format=3 uid="uid://t4v91ks2dpmot"]
+
+[ext_resource type="Script" path="res://src/Enemies/EnemyBase.cs" id="1_eny"]
+[ext_resource type="Script" path="res://src/Combat/Health.cs" id="2_hp"]
+[ext_resource type="Script" path="res://src/VFX/SpriteAnimator.cs" id="3_anim"]
+[ext_resource type="Texture2D" path="res://art/anim/enemy_bird_walk.png" id="4_tex_cat"]
+[ext_resource type="Texture2D" path="res://art/anim/enemy_beetle_walk.png" id="5_tex_beetle"]
+[ext_resource type="Texture2D" path="res://art/anim/enemy_bug_walk.png" id="6_tex_bug"]
+[ext_resource type="Texture2D" path="res://art/anim/kaola_walk.png" id="7_tex_kaola"]
+[ext_resource type="Texture2D" path="res://art/anim/enemy_dove_fly.png" id="8_tex_dove"]
+[ext_resource type="Texture2D" path="res://art/anim/beehome_idle.png" id="9_tex_beehome"]
+[ext_resource type="Texture2D" path="res://art/anim/bee_walk.png" id="10_tex_bee"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eny"]
+radius = 18.0
+
+[node name="EnemyBase" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+motion_mode = 1
+script = ExtResource("1_eny")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+script = ExtResource("3_anim")
+RandomIdleTextures = [ExtResource("4_tex_cat"), ExtResource("5_tex_beetle"), ExtResource("6_tex_bug")]
+RandomWalkTextures = [ExtResource("4_tex_cat"), ExtResource("5_tex_beetle"), ExtResource("6_tex_bug")]
+RandomIdleFrames = 1
+RandomWalkFrames = 4
+EliteIdleTextures = [ExtResource("8_tex_dove")]
+EliteWalkTextures = [ExtResource("8_tex_dove")]
+EliteIdleFrames = 4
+EliteWalkFrames = 4
+TrackerIdleTextures = [ExtResource("7_tex_kaola")]
+TrackerWalkTextures = [ExtResource("7_tex_kaola")]
+TrackerIdleFrames = 4
+TrackerWalkFrames = 4
+HiveIdleTextures = [ExtResource("9_tex_beehome")]
+HiveWalkTextures = [ExtResource("9_tex_beehome")]
+HiveIdleFrames = 4
+HiveWalkFrames = 4
+BeeIdleTextures = [ExtResource("10_tex_bee")]
+BeeWalkTextures = [ExtResource("10_tex_bee")]
+BeeIdleFrames = 4
+BeeWalkFrames = 4
+AnimSpeed = 8.0
+FlipWithDirection = true
+ArtFacesLeft = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("CircleShape2D_eny")
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("2_hp")
+MaxHP = 1

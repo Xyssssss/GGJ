@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx3ja4n3v2s4f"]
+
+[ext_resource type="Script" uid="uid://bxk0jik4ntqo1" path="res://src/UI/UpgradePicker.cs" id="1_script"]
+
+[node name="UpgradePicker" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_script")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyUpgradeData" load_steps=2 format=3 uid="uid://dfgucae3vly7y"]
+
+[ext_resource type="Script" uid="uid://7x08hula6sqr" path="res://src/Upgrades/EnemyUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "嗅觉/化学追踪取食"
+Description = "追踪怪：每波额外刷 2 只极慢、持续追踪玩家的敌人
+菜粉蝶靠芥子油苷气味定位十字花科、天牛靠寄主挥发物定点、寄生蜂循植物受害挥发物找毛虫"
+Rarity = 2
+IsMechanic = true
+Stat = 15
+Value = 1.0

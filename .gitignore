@@ -1,0 +1,23 @@
+# Godot 4+ specific ignores
+.godot/
+.import/
+*.import
+export_presets.cfg
+# Godot export / build outputs
+*.apk
+*.aab
+*.idsig
+*.tpz
+data_*/
+android/build/
+android/.build_version
+# C# / Mono
+.mono/
+bin/
+obj/
+# System / IDE files
+.DS_Store
+Thumbs.db
+.vs/
+.vscode/
+.idea/

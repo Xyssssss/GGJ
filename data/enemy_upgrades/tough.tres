@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyUpgradeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/Upgrades/EnemyUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "坚韧"
+Description = "敌人生命 +1"
+Rarity = 0
+MaxStack = 3
+IsMechanic = false
+Stat = 0
+Op = 0
+Value = 1.0

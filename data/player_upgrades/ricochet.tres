@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerUpgradeData" load_steps=2 format=3 uid="uid://du53g3joaykin"]
+
+[ext_resource type="Script" uid="uid://bt7y0u5mb1kp7" path="res://src/Upgrades/PlayerUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "弹射传播"
+Description = "跳弹：子弹碰屏幕边缘按65% 概率光学反射，每发至多 1 次
+酢浆草蒴果弹裂种子撞地反弹、喷瓜乳汁高压喷射后籽苗触障偏移，都属于\"边界反射再利用\"。"
+Rarity = 1
+IsMechanic = true
+Stat = 14
+Value = 1.0

@@ -1,0 +1,23 @@
+# ===== Godot =====
+# ⚠️ 最重要的一条：场景 / 资源标记 binary。
+# 否则 Git 会"假成功"合并 .tscn，把场景结构悄悄改坏，而且编译不报错，
+# 直到运行时炸掉才发现。代价是不能自动合并 —— 但我们本来就不该合并场景。
+*.tscn binary
+*.tres binary
+
+# 文本类
+*.cs text=auto eol=lf
+*.md text=auto eol=lf
+*.json text=auto eol=lf
+*.cfg text=auto eol=lf
+*.godot text=auto eol=lf
+*.shader text=auto eol=lf
+*.yml text=auto eol=lf
+
+# 二进制资产
+*.png binary
+*.jpg binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.ttf binary

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerUpgradeData" load_steps=2 format=3 uid="uid://dsjagn5jr430b"]
+
+[ext_resource type="Script" uid="uid://bt7y0u5mb1kp7" path="res://src/Upgrades/PlayerUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "补偿性增长（苜蓿）"
+Description = "累计击杀 8个敌人，生命上限 +1
+苜蓿、草被啃食后若光温水足，再生生物量反而超过未啃食株。"
+Rarity = 1
+Stat = 18
+Op = 2
+Value = 10.0

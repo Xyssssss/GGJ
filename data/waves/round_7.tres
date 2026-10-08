@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WaveConfig" load_steps=2 format=3 uid="uid://261b2xcwrl6a9"]
+
+[ext_resource type="Script" path="res://src/Data/WaveConfig.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+WaveCount = 6
+EnemiesPerWave = 6
+WaveInterval = 3.5

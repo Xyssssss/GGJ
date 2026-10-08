@@ -1,0 +1,61 @@
+[gd_scene load_steps=13 format=3 uid="uid://cwnwj8k2q7xlx"]
+
+[ext_resource type="Script" path="res://src/Player/Player.cs" id="1_ply"]
+[ext_resource type="Script" path="res://src/Combat/Health.cs" id="2_hp"]
+[ext_resource type="Script" path="res://src/Player/Weapon.cs" id="3_wp"]
+[ext_resource type="Script" path="res://src/VFX/SpriteAnimator.cs" id="4_anim"]
+[ext_resource type="Texture2D" path="res://art/anim/player_idle.png" id="5_tex_idle"]
+[ext_resource type="Texture2D" path="res://art/anim/player_walk.png" id="6_tex_walk"]
+[ext_resource type="Texture2D" path="res://art/anim/player_sprout_idle.png" id="11_tex_sprout_idle"]
+[ext_resource type="Texture2D" path="res://art/anim/player_sprout_walk.png" id="12_tex_sprout_walk"]
+[ext_resource type="Texture2D" path="res://art/anim/player_flower_idle.png" id="13_tex_flower_idle"]
+[ext_resource type="Texture2D" path="res://art/anim/player_flower_walk.png" id="14_tex_flower_walk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ply"]
+radius = 14.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hurt"]
+radius = 20.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 1
+collision_mask = 2
+motion_mode = 1
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_ply")
+Growth1Idle = ExtResource("11_tex_sprout_idle")
+Growth1Walk = ExtResource("12_tex_sprout_walk")
+Growth1IdleFrames = 2
+Growth1WalkFrames = 4
+Growth2Idle = ExtResource("13_tex_flower_idle")
+Growth2Walk = ExtResource("14_tex_flower_walk")
+Growth2IdleFrames = 2
+Growth2WalkFrames = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+script = ExtResource("4_anim")
+flip_h = true
+IdleTexture = ExtResource("5_tex_idle")
+IdleFrames = 2
+WalkTexture = ExtResource("6_tex_walk")
+WalkFrames = 4
+AnimSpeed = 10.0
+AutoCenterContent = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ply")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 1
+collision_mask = 2
+monitoring = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("CircleShape2D_hurt")
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("2_hp")
+MaxHP = 3
+
+[node name="Weapon" type="Node" parent="."]
+script = ExtResource("3_wp")

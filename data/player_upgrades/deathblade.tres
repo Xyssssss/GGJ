@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerUpgradeData" load_steps=2 format=3 uid="uid://d3jp5uigyk0u3"]
+
+[ext_resource type="Script" uid="uid://bt7y0u5mb1kp7" path="res://src/Upgrades/PlayerUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "宿存根蘖"
+Description = "名刀（背水一战）：生命归 0 进入 8s 窗口，窗口内清空全部敌人则回满血判胜。触发即消耗，永久移出池
+宿根草本（菊芋、芦苇）地上被齐茬啃光，地下根颈休眠芽在数日内重启冠层；"
+Rarity = 2
+IsMechanic = true
+Stat = 16
+Value = 1.0

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerUpgradeData" load_steps=2 format=3 uid="uid://0k8wi5txmdln"]
+
+[ext_resource type="Script" uid="uid://bt7y0u5mb1kp7" path="res://src/Upgrades/PlayerUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "断枝/匍匐茎快速位移"
+Description = "闪现：鼠标右键向当前移动方向瞬移 120px，CD 2s
+草莓匍匐茎瞬间拉开间距、仙人掌断枝滚移、含羞草叶枕快速闭合移位。植物没有\"瞬移\"但有营养繁殖体短距跃迁。"
+Rarity = 1
+IsMechanic = true
+Stat = 15
+Value = 1.0

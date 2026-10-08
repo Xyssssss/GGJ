@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="FeelConfig" load_steps=2 format=3 uid="uid://5b8gmoz1gv47o"]
+
+[ext_resource type="Script" path="res://src/Data/FeelConfig.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+Accel = 2000.0
+Friction = 1600.0
+InvincibleTime = 1.5
+HitStopTime = 0.05
+ShakeStrength = 4.0
+BlinkHz = 12.0

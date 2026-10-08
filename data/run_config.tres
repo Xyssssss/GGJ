@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="RunConfig" load_steps=14 format=3 uid="uid://cmq6lctqaal67"]
+
+[ext_resource type="Script" uid="uid://bpahoxldrb2ia" path="res://src/Data/RunConfig.cs" id="1_scr"]
+[ext_resource type="Script" uid="uid://b8kiatq6evs8d" path="res://src/Data/WaveConfig.cs" id="4_f12q0"]
+[ext_resource type="PackedScene" uid="uid://4u4qv6gkqmwi" path="res://Scenes/entities/bullet.tscn" id="b_scn"]
+[ext_resource type="PackedScene" uid="uid://suw3a7sjo8v0" path="res://Scenes/entities/enemy_base.tscn" id="e_scn"]
+[ext_resource type="PackedScene" uid="uid://cwnwj8k2q7xlx" path="res://Scenes/entities/player.tscn" id="p_scn"]
+[ext_resource type="Resource" uid="uid://cpl07tsi6ap08" path="res://data/waves/round_1.tres" id="w1"]
+[ext_resource type="Resource" uid="uid://dm8wmya2dh7wq" path="res://data/waves/round_2.tres" id="w2"]
+[ext_resource type="Resource" uid="uid://dqm6culneydfj" path="res://data/waves/round_3.tres" id="w3"]
+[ext_resource type="Resource" uid="uid://c3ye8w71ogn5j" path="res://data/waves/round_4.tres" id="w4"]
+[ext_resource type="Resource" uid="uid://bfwe2tunpnobx" path="res://data/waves/round_5.tres" id="w5"]
+[ext_resource type="Resource" uid="uid://bjm571qlc8562" path="res://data/waves/round_6.tres" id="w6"]
+[ext_resource type="Resource" uid="uid://457xjv5s61yw" path="res://data/waves/round_7.tres" id="w7"]
+[ext_resource type="Resource" uid="uid://d3qkp5vyixwtr" path="res://data/waves/round_8.tres" id="w8"]
+
+[resource]
+script = ExtResource("1_scr")
+PlayerMoveSpeed = 250.0
+FireCooldown = 0.4
+EnemyMoveSpeed = 180.0
+RicochetChance = 0.65
+DashCooldown = 2.0
+ExtraShotInterval = 0.08
+LaserSpinDegPerSec = 60.0
+EliteChance = 0.2
+EliteHPMul = 10.0
+EliteSpeedMul = 1.2
+TrackerSpeed = 50.0
+AccelBase = 0.2
+SplitScale = 0.7
+SplitHiveSpeedMul = 0.6
+LifestealKills = 3
+GrowthKills = 8
+Waves = Array[ExtResource("4_f12q0")]([ExtResource("w1"), ExtResource("w2"), ExtResource("w3"), ExtResource("w4"), ExtResource("w5"), ExtResource("w6"), ExtResource("w7"), ExtResource("w8")])
+PlayerScene = ExtResource("p_scn")
+EnemyScene = ExtResource("e_scn")
+BulletScene = ExtResource("b_scn")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyUpgradeData" load_steps=2 format=3 uid="uid://bibh27x4rt0wb"]
+
+[ext_resource type="Script" uid="uid://7x08hula6sqr" path="res://src/Upgrades/EnemyUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "大型化捕食者"
+Description = "精英：每个轮次的每个波次都有20%概率额外刷 1 个大体积精英（血量10、移速较快）
+象、犀牛、大型陆龟靠体型直接无视荆棘与低矮灌木；体型放大是食草动物对抗\"刺+密枝笼状防御\"的协同回应"
+Rarity = 2
+IsMechanic = true
+Stat = 8
+Value = 1.0

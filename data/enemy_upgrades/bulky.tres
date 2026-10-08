@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyUpgradeData" load_steps=2 format=3 uid="uid://bfjb832odjjya"]
+
+[ext_resource type="Script" uid="uid://7x08hula6sqr" path="res://src/Upgrades/EnemyUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "巨型化亚个体"
+Description = "庞大：敌人体积 +25%（含碰撞体积）
+白蚁矛蚁兵蚁、象甲巨型雌虫、群居昆虫里的\"巨头型\""
+MaxStack = 2
+Stat = 4
+Op = 1
+Value = 0.25

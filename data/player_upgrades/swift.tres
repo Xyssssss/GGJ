@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerUpgradeData" load_steps=2 format=3 uid="uid://bcs7pg1gf1ctm"]
+
+[ext_resource type="Script" uid="uid://bt7y0u5mb1kp7" path="res://src/Upgrades/PlayerUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "风媒扩散"
+Description = "移动速度 +15%
+蒲公英、桦树靠风播种子，演替早期植物（如一年生杂草）生长速率极高，在被啃食干扰后的裸地迅速铺开。"
+MaxStack = 5
+Stat = 1
+Op = 1
+Value = 0.15

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyUpgradeData" load_steps=2 format=3 uid="uid://c34so7wg64irm"]
+
+[ext_resource type="Script" uid="uid://7x08hula6sqr" path="res://src/Upgrades/EnemyUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "昆虫爆发式种群"
+Description = "密集：刷怪间隔 -20%
+蚜虫、粉虱、沙漠蝗在食物充足时世代周期压缩、群密度指数上升。植物防御被突破→捕食者侧用\"数量密度\"反制。"
+MaxStack = 3
+Stat = 2
+Value = 0.2

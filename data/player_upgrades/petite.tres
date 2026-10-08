@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerUpgradeData" load_steps=2 format=3 uid="uid://cykce11p3ltrr"]
+
+[ext_resource type="Script" uid="uid://bt7y0u5mb1kp7" path="res://src/Upgrades/PlayerUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = " 小型化避难演化"
+Description = "娇小：碰撞体积 -20%
+高山流石滩植物（如半荷包紫堇）贴地、叶小、嵌进碎石；水生浮萍躯体极小降低被植食性鱼类锁定概率。"
+MaxStack = 3
+Stat = 7
+Op = 1
+Value = -0.2

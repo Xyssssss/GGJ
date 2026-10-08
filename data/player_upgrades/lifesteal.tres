@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlayerUpgradeData" load_steps=2 format=3 uid="uid://cnkvv85jqvho2"]
+
+[ext_resource type="Script" uid="uid://bt7y0u5mb1kp7" path="res://src/Upgrades/PlayerUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "寄生/半寄生"
+Description = "累计击杀 3 个敌人，恢复 1 点生命
+槲寄生、独脚金等半寄生植物直接从寄主维管束抽水分无机盐；落叶植物秋后把叶片氮磷回输枝条再落叶"
+Stat = 10
+Op = 2
+Value = 4.0

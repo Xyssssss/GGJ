@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerUpgradeData" load_steps=2 format=3 uid="uid://df4uddwea5ohu"]
+
+[ext_resource type="Script" uid="uid://bt7y0u5mb1kp7" path="res://src/Upgrades/PlayerUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "速射"
+Description = "速射：发射 CD -15%
+腺体分泌频率加快"
+MaxStack = 6
+Stat = 2
+Op = 1
+Value = -0.15

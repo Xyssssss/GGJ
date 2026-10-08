@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerUpgradeData" load_steps=2 format=3 uid="uid://bossopkninh8y"]
+
+[ext_resource type="Script" uid="uid://bt7y0u5mb1kp7" path="res://src/Upgrades/PlayerUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "毒液喷射 / 树脂炮 / 乳管扫射"
+Description = "毒液：干扰波改毒液，穿透腐蚀路径上所有敌人；但喷射方向时刻顺时针环绕玩家
+\"裂榄叶脉承压，咬穿即喷毒树脂——仿 Bursera 裂榄属水枪防御，1 亿年军备竞赛产物\""
+Rarity = 2
+IsMechanic = true
+Stat = 13
+Value = 1.0

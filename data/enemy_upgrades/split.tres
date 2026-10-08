@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyUpgradeData" load_steps=2 format=3 uid="uid://clx4omflnr0od"]
+
+[ext_resource type="Script" uid="uid://7x08hula6sqr" path="res://src/Upgrades/EnemyUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "马蜂窝"
+Description = "分裂：每波额外出现马蜂窝，被击败后裂出 2 只速度极快的马蜂
+嗡嗡嗡"
+Rarity = 1
+IsMechanic = true
+Stat = 14
+Value = 1.0

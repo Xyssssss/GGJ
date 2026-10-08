@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://ugwho6rpeqzpc"]
+
+[ext_resource type="Script" path="res://src/Bullets/Bullet.cs" id="1_bul"]
+[ext_resource type="Script" path="res://src/VFX/SpriteAnimator.cs" id="2_anim"]
+[ext_resource type="Texture2D" path="res://art/anim/muzzle_flash.png" id="3_tex"]
+[ext_resource type="Texture2D" path="res://art/anim/jiguang.png" id="4_jg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bul"]
+size = Vector2(16, 6)
+
+[node name="Bullet" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+monitoring = true
+script = ExtResource("1_bul")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+script = ExtResource("2_anim")
+IdleTexture = ExtResource("3_tex")
+IdleFrames = 2
+AnimSpeed = 6.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bul")
+
+[node name="LaserSprite" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("4_jg")

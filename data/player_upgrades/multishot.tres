@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerUpgradeData" load_steps=2 format=3 uid="uid://oqfnw70vnflp"]
+
+[ext_resource type="Script" uid="uid://bt7y0u5mb1kp7" path="res://src/Upgrades/PlayerUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "连发"
+Description = "连发：每次发射后隔 T 秒补射一次（每层 +1 发）
+多刺毛/多次喷射"
+Rarity = 1
+MaxStack = 3
+Stat = 4
+Value = 1.0

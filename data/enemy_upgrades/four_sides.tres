@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyUpgradeData" load_steps=2 format=3 uid="uid://4bm3a7bcd6c0"]
+
+[ext_resource type="Script" uid="uid://7x08hula6sqr" path="res://src/Upgrades/EnemyUpgradeData.cs" id="1_scr"]
+
+[resource]
+script = ExtResource("1_scr")
+DisplayName = "多向觅食与包围采食"
+Description = "四向：出生点改为上下左右整个屏幕边缘，方向随机
+蝗群、蚊群、觅食蚂蚁从四周合围一丛植物；毛虫队列从叶缘四面切入。是真实植食昆虫的\"去单向右行\"空间策略。"
+Rarity = 1
+IsMechanic = true
+Stat = 13
+Value = 1.0
